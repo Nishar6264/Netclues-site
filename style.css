@@ -1,0 +1,253 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header */
+header {
+    background-color: #fff;
+    padding: 10px 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    height: 50px;
+    width: auto; /* Allow the width to adjust */
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: black;
+    text-decoration: none;
+    font-size: large;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+    color: #2a55a3;
+}
+
+/* Container */
+.container {
+    justify-content: space-between;
+    min-height: 400px; /* Change height to min-height */
+}
+
+/* Section Bar */
+.section-bar {
+    position: sticky;
+    margin-top: 50px;
+    background-color: #2a55a3;
+    padding: 20px 10px;
+    border-radius: 10px;
+    top: 0;
+}
+
+.section-bar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.section-bar ul li {
+    margin-bottom: 10px;
+}
+
+.section-bar ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+}
+
+.section-bar ul li a:hover {
+    background-color: #ffff;
+}
+
+/* Content */
+.content {
+    flex-grow: 1;
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+section h2 {
+    margin-bottom: 10px;
+}
+
+section p {
+    line-height: 1.6;
+}
+
+/* Banner */
+.banner img {
+    max-width: 100%;
+}
+
+#prevbtn,
+#nextbtn {
+    font-size: 20px;
+    padding: 20px;
+    color: #fff;
+    background-color: transparent;
+    position: absolute;
+    top: 50%; /* Position in the middle */
+}
+
+#prevbtn {
+    left: 10px; /* Adjust positioning */
+    border-radius: 0 20px 20px 0;
+}
+
+#nextbtn {
+    right: 10px; /* Adjust positioning */
+    border-radius: 20px 0 0 20px;
+}
+
+.welcome-section {
+    width: 100%; /* Adjust to full width */
+    max-width: 900px; /* Set max width */
+    height: auto; /* Allow height to adjust */
+    position: relative;
+}
+
+/* Services */
+#services {
+    margin-top: 30px;
+}
+
+.section-heading {
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.services-cards {
+    display: flex;
+    flex-wrap: wrap; /* Enable wrapping */
+    justify-content: center; /* Center items */
+}
+
+.services-card {
+    height: 300px;
+    width: 45%; /* Adjust width for responsiveness */
+    margin: 10px;
+    padding: 50px;
+    background-color: #2a55a3;
+    border-radius: 10px;
+    box-sizing: border-box; /* Include padding in width calculation */
+}
+
+.services-card h2 {
+    margin-bottom: 10px;
+    font-size: 20px;
+    text-align: center; /* Center text */
+}
+
+.services-card p {
+    font-size: 16px;
+    text-align: center; /* Center text */
+}
+
+/* Gallery */
+.gallery {
+    max-width: 100%; /* Ensure responsiveness */
+    width: auto; /* Allow width to adjust */
+    margin: 0 auto;
+    position: relative;
+    height: auto; /* Allow height to adjust */
+    padding: 5px;
+    background: #fff;
+    overflow: hidden; /* Prevent overflow issues */
+}
+
+.gallery div {
+    position: relative;
+    float: left;
+    padding: 5px;
+}
+
+.gallery div img {
+    width: 100%; /* Adjust image width */
+    height: auto; /* Allow height to adjust */
+    transition: 0.1s transform;
+    transform: translateZ(0);
+}
+
+.gallery div:hover {
+    z-index: 1;
+}
+
+.gallery div:hover img {
+    transform: scale(1.2); /* Adjust scale on hover */
+    transition: 0.3s transform;
+}
+
+/* Footer */
+footer {
+    background-color: #2a55a3;
+    color: #fff;
+    position: relative;
+    padding: 20px;
+    text-align: center;
+    margin: 0; /* Remove unnecessary margins */
+}
+
+.footer-links ul {
+    list-style-type: none;
+    display: flex; /* Use flexbox for alignment */
+    justify-content: center; /* Center links */
+}
+
+.footer-links ul li {
+    margin-right: 20px;
+}
+
+.footer-links ul li:last-child {
+    margin-right: 0;
+}
+
+.footer-links ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.contact-info,
+.address,
+.social-links,
+.copy-right {
+    margin-top: 20px;
+}
+
+.social-icon {
+    color: #fff;
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+.social-icon:hover {
+    color: #bbb;
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+    .services-card {
+        width: 100%; /* Adjust width for smaller screens */
+    }
+}
